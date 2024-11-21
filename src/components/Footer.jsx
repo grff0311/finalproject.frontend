@@ -1,13 +1,13 @@
-import '../styles/Footer.css'
+import "../styles/Footer.css";
 
 function Footer() {
   return (
     <div id="copyright">
-        <div className="wrapper">
-            &copy; 2024. <b>gacorGroup.</b> All Rights Reserved.
-        </div>
+      <div className="wrapper">
+        &copy; 2024. <b>SkillUp</b> All Rights Reserved.
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
