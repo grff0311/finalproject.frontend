@@ -2,6 +2,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { homeSection } from '../data/HomeSection'
 import {coursesSection} from '../data/CoursesSection'
+import { tutorsSection, tutorsList } from '../data/TutorsSection'
+import Tutors from '../components/Tutors'
 
 import parse from 'html-react-parser'
 import '../styles/Home.css'
@@ -19,19 +21,20 @@ function Home() {
             </section>
             {/* online course */}
             <section id="courses">
-            <div className="kolom">
-               {parse(coursesSection.content)}
-            </div>
-            <img src={coursesSection.image}/>
+                <div className="kolom">
+                {parse(coursesSection.content)}
+                </div>
+                <img src={coursesSection.image}/>
+            </section>
             {/* Tutors */}
             <section id="tutors">
                 <div className="tengah">
                     <div className="kolom">
-                       
+                       {parse(tutorsSection.content)}
                     </div>
+                    <Tutors tutorsList={tutorsList}/>
                 </div>
             </section>
-        </section>
         </div>
         <Footer />
     </>

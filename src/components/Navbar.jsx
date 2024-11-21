@@ -1,10 +1,11 @@
 import '../styles/Navbar.css'
 
+
 function Navbar() {
   return (
     <nav>
         <div className="wrapper">
-            <div className="logo"><a href=''>gg_Blog</a></div>
+            <div className="logo"><a href=''>SkillUp</a></div>
             <div className="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
